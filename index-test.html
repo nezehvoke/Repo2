@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="img/tsubocchi-icon.ico"> <!-- Bear -->
+
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet"> <!-- Google Font -->
+
+<!-- Booststrap CSS -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style - Copy.css">
+
+<!-- Reserve -->
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/datepicker.css" rel="stylesheet" type="text/css">	
+<link href="css/timepicki.css" rel="stylesheet">
+
+<!--media--> 
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!-- Modernizr -->
+<script src="js/modernizr.js"></script>
+ 
+<!-- Slide -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/cycle2.js"></script>
+<script type="text/javascript" src="js/declarativeToggle.js"></script>
+
+
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+</script>
+
+<script type="text/javascript">
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("all").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("all").style.marginLeft= "0";
+}
+
+
+function dynamic(o)
+{
+	fc=document.getElementById('branch');
+	if(!fc){return;}			
+	var mitems=new Array();
+	mitems['def'] = ['--Choose Branch--'];
+	mitems['Tsubohachi']=['Sukhumvit 33','Future Park','The Promenade','Nihonmura Mall (Thonglor 13)','Nihonmachi Japanese Mall (Sukhumvit 26)','Thaniya','BEEHIVE Lifestyle Mall'];
+	mitems['Ito-Kacho']=['Nihonmura Mall (Thonglor 13)'];
+	mitems['Taisho-tei']=['IMPACT','BEEHIVE Lifestyle Mall','The Mall Ngamwongwan'];
+	fc.options.length=0;
+	cur=mitems[o.options[o.selectedIndex].value];
+	if(!cur){return;}
+	fc.options.length=cur.length;
+	for(var i=0;i<cur.length;i++)
+	{
+		fc.options[i].text=cur[i];
+		fc.options[i].value=cur[i];
+		}
+	}
+</script>
+<!-- End of reserve -->
+
+<!-- menu -->
+<script type="text/javascript">
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<title>TSUBOHACHI-GROUP-TH</title>
+</head>
+
+<body>
+<div id="all">    
+        
+	<section id="lang">
+    	<div class="container">
+            	<a href="#"><p class="foot3-oneline">日本語</p></a>
+                <p class="foot3-oneline">|</p>
+                <a href="#"><p class="foot3-oneline">ENG</p></a>
+                <p class="foot3-oneline">|</p>
+                <a href="#"><p class="foot3-oneline">ไทย</p></a>
+        </div>
+    </section>    
+
+    <section id="menu">
+    	<ul class="topnav" id="myTopnav">
+             <li id="marginn"><a href="#lang">HOME</a></li>
+             <li><a href="#promotion">PROMOTION</a></li>
+             <li><a href="#media">MEDIA</a></li>
+             <li><a href="#contact">CONTACT US</a></li>
+             <li class="icon">
+               <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+             </li>
+             
+             <li class="topnav2" style="float:right">
+             	<a href="tel:+66989509318"><img src="img/tel-icon.png"></a>
+            	<a href="https://www.instagram.com/tsubohachi_thailand"><img src="img/insta-icon.png"></a>
+                <a href="https://www.facebook.com/TsubohachiTh"><img src="img/facebook-icon.png"></a>
+             </li>
+        </ul>
+    </section>
+        
+    <!-- Slide -->
+    <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+        					
+		<span class="cycle-prev">&laquo;</span>
+		<span class="cycle-next">&raquo;</span>
+							
+		<span class="cycle-pager"></span>
+
+		<div class="slide">
+			<img src="img/home_02-02-02.jpg">
+		</div>
+
+		<div class="slide">
+			<img src="img/home_02-02-04.jpg">
+		</div>
+
+	</div>
+    <!-- End of Slide -->
+
+	<section id="visit-site">
+    <div class="bg01"></div>
+	<div id="bg">
+    	<div class="container">
+        	<div class="row" style="padding:50px">
+                <div class="col-sm-4" align="center">
+                	<a href="#"><img src="img/taisho-tei_detail.png" class="img-responsive"></a>
+                    <p class="blue-text">TAISHO-TEI</p>
+                    <p class="white-text">Decorated in a modern oriental style, Taisho-Tei Ramen serves Japanese home style noodles skillfully created by highly experienced chefs.</p>
+                    <a href="#"><p class="blue-text-small">Visit Site >></p></a>
+                </div>
+                <div class="col-sm-4" align="center">
+                	<a href="http://www.tsubohachi-tha.com/index.php/tsu/home/index"><img src="img/tsubohachi_detail.png" class="img-responsive"></a>
+                    <p class="blue-text">TSUBOHACHI</p>
+                    <p class="white-text">An authentic Izakaya style restaurant ranked Japan’s No.1 Izakaya with more than 300 outlets in Japan and Singapore for over 40 years.</p>
+                    <a href="http://www.tsubohachi-tha.com/index.php/tsu/home/index"><p class="blue-text-small">Visit Site >></p></a>
+                </div>
+                <div class="col-sm-4" align="center">
+                	<a href="http://www.tsubohachi-tha.com/index.php/skd/home/index"><img src="img/ito-kacho_detail.png" class="img-responsive"></a>
+                    <p class="blue-text">ITO-KACHO</p>
+                    <p class="white-text">Founded in 2009, Ito-Kacho was first established in Tokyo to offer customers with an opportunity to taste the elegant flavors of yakiniku</p>
+                    <a href="http://www.tsubohachi-tha.com/index.php/skd/home/index"><p class="blue-text-small">Visit Site >></p></a>
+                </div>
+            </div><!-- End of row -->
+        </div><!-- End of Container -->
+    <img src="img/line_01.png" width="100%"><!-- Before Promotion -->
+	</div><!-- End BG-->
+    </section><!-- End of visit-site -->
+
+<div class="bg02" style="padding:50px" align="center" >
+	<!-- Place somewhere in the <body> of your page -->
+    <section id="promotion">
+    	<div class="title-main" style="padding-bottom:30px;" align="center"><img src="img/title_promotion.png" /></div>
+        <div class="flexslider carousel">
+          <ul class="slides">
+            <li>
+              <a href="http://www.tsubohachi-tha.com/index.php/tsu/promotion/index"><img src="img/promotion_01.png" /></a>
+            </li>
+            <li>
+              <a href="http://www.tsubohachi-tha.com/index.php/skd/promotion"><img src="img/promotion_02.png" /></a>
+            </li>
+            <li>
+              <a href="http://www.tsubohachi-tha.com/index.php/tsu/promotion/index"><img src="img/promotion_03.png" /></a>
+            </li>
+            <li>
+              <a href="http://www.tsubohachi-tha.com/index.php/tsu/promotion/index"><img src="img/promotion_01.png" /></a>
+            </li>
+            <li>
+              <a href="http://www.tsubohachi-tha.com/index.php/skd/promotion"><img src="img/promotion_02.png" /></a>
+            </li>
+            <li>
+              <a href="http://www.tsubohachi-tha.com/index.php/tsu/promotion/index"><img src="img/promotion_03.png" /></a>
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+          </ul>
+        </div>
+        
+       	
+      </section>
+    <!-- End slideslide-->
+</div>
+    <img src="img/line_02.png" width="100%"><!-- Before Media -->
+  
+<div id="bg3" style="padding:50px" align="center">
+<div class="bg03" style="padding:50px">
+	<section id="media">
+	<div class="title-main" style="padding-bottom:30px;" align="center"><img src="img/title_media.png" /></div>
+    
+    <div id="media-tab">
+   	<input id="tab1" type="radio" name="tabs" checked><label for="tab1">Video</label>
+    <input id="tab2" type="radio" name="tabs"><label for="tab2">Clipping</label>
+   
+    <section id="video">
+        <div id="slider" class="flexslider carousel" align="center" style="margin-bottom:10px">
+          <ul class="slides">
+            	<li>
+  	    	    <iframe width="100%" height="400" src="https://www.youtube.com/embed/tdwtXR-9thA" frameborder="0" allowfullscreen></iframe>
+  	    		</li>
+  	    		<li>
+  	    	    <iframe width="100%" height="400" src="https://www.youtube.com/embed/gkIS396Dc1I" frameborder="0" allowfullscreen></iframe>
+  	    		</li>
+  	    		<li>
+  	    	    <iframe width="100%" height="400" src="https://www.youtube.com/embed/vXmbHeS6YUs" frameborder="0" allowfullscreen></iframe>
+  	    		</li>
+                <li>
+  	    	    <iframe width="100%" height="400" src="https://www.youtube.com/embed/tdwtXR-9thA" frameborder="0" allowfullscreen></iframe>
+  	    		</li>
+                <li>
+  	    	    <iframe width="100%" height="400" src="https://www.youtube.com/embed/gkIS396Dc1I" frameborder="0" allowfullscreen></iframe>
+  	    		</li>
+                <li>
+  	    	    <iframe width="100%" height="400" src="https://www.youtube.com/embed/vXmbHeS6YUs" frameborder="0" allowfullscreen></iframe>
+  	    		</li>
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+           		<li>
+  	    	    <a href="#"><img src="img/video_01.png"></a>
+  	    		</li>
+  	    		<li>
+  	    	    <a href="#"><img src="img/video_02.png"></a>
+  	    		</li>
+  	    		<li>
+  	    	    <a href="#"><img src="img/video_03.png"></a>
+  	    		</li>
+                <li>
+  	    	    <a href="#"><img src="img/video_01.png"></a>
+  	    		</li>
+  	    		<li>
+  	    	    <a href="#"><img src="img/video_02.png"></a>
+  	    		</li>
+  	    		<li>
+  	    	    <a href="#"><img src="img/video_03.png"></a>
+  	    		</li>
+          </ul>
+        </div>
+        <script type="text/javascript">
+			  $(window).load(function() {
+			  // The slider being synced must be initialized first
+			  $('#carousel').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: 210,
+				itemMargin: 5,
+				asNavFor: '#slider'
+			  });
+			 
+			  $('#slider').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				sync: "#carousel"
+			  });
+			});
+  		</script>
+      </section><!-- section #video -->
+      
+    <section id="clipping">
+      	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-4">
+                	<a href="img/clipping_01.png"><img src="img/clipping_01.png" class="img-responsive"></a>
+                </div>
+                <div class="col-sm-4">
+                	<a href="img/clipping_02.png"><img src="img/clipping_02.png" class="img-responsive"></a>
+                </div>
+                <div class="col-sm-4">
+                	<a href="img/clipping_03.png"><img src="img/clipping_03.png" class="img-responsive"></a>
+                </div>
+            </div><!-- End of row-->
+            <!-- Pagination-->
+<ul class="pagination">
+  <li><a href="#media">«</a></li>
+  <li><a class="active" href="#media">1</a></li>
+  <li><a href="#media">2</a></li>
+  <li><a href="#media">»</a></li>
+</ul>
+  		<!--End of pagination-->
+        </div><!-- End of container-->
+    </section><!-- section #clipping -->
+     
+   </div><!--media-tab-->
+
+</section>
+</div><!-- bg03 -->
+    </div><!-- bg3 --><img src="img/line_03.gif" width="100%">
+
+    
+<div class="bg04">
+	
+    <section id="contact">
+    	<div class="container contact1" align="center" style="padding:50px">
+        	<div class="title-main"><img src="img/title_contact_us.png" /></div>
+        	<div class="row hide-medium">
+            	<div class="col-sm-12">
+                    <div class="map" align="center">
+                    	<div class="col-sm-4">
+                        	<a href="#"><img src="img/map_icon_tsubo.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                        	<a href="#"><img src="img/map_icon_ito.png" /></a>
+                        </div>
+                        <div class="col-sm-4">
+                        	<a href="#"><img src="img/map_icon_tai.png" /></a>
+                        </div>
+                    </div> 
+                </div> 
+            </div><!-- End of row-->
+            <div class="row">
+            	<form action="">
+            	<div class="col-sm-6">
+                    <input class="box-a" id="name" type="text" name="name"  placeholder=" Name" required/><br />
+                    <input class="box-a"  id="email" type="email" name="email"placeholder=" E-mail" required/><br />
+                    <input class="box-a"  id="subject" type="text" name="subject"  placeholder=" Subject" required/>
+                </div>
+                <div class="col-sm-6">
+                    <textarea class="box-b"  id="message" name="message" placeholder=" Message" required></textarea><br />
+                    <input class="box-c"  type="submit" value="Submit" />
+                </div>
+                </form>
+            </div>
+        	
+        </div>
+        
+    </section><!-- contact-->
+    
+    
+    <section id="footer">
+    	<div class="container">
+        	<div class="row footfoot">
+            	<div class="col-sm-4 foot1">
+                	<div class="foot1-content">Restaurant｜料亭</div>
+                    <hr class="foot1-hr"/>
+                    <ul class="foot1-ul">
+                    	<li><a href="http://www.tsubohachi-tha.com/index.php/tsu/home/index">・Tsubohachi &nbsp;-つぼ八-</a></li>
+                        <li><a href="http://www.tsubohachi-tha.com/index.php/skd/home/index">・Ito-kacho &nbsp;&nbsp;&nbsp;-伊藤課長-</a></li>
+                        <li><a href="#">・Taisho-tei &nbsp;&nbsp;-大正亭-</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 foot1">
+                	<div class="foot1-content">Contact｜連絡</div>
+                    <hr class="foot1-hr" />
+                    <ul class="foot1-ul">
+                    	<li><a href="tel:+66923602131">・日本語 - 092-360-2131</a></li>
+                        <li><a href="tel:+66989509318">・Thai &nbsp;&nbsp;&nbsp;- 098-950-9318</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 foot1">
+                	<div class="foot1-content">Official website｜公式ウェブサイト</div>
+                    <hr class="foot1-hr" />
+                    <ul class="foot1-ul">
+                    	<li><a href="http://www.impact.co.th/">・IMPACT Muang Thong Thani</a></li>
+                    </ul>
+                </div>
+            </div><!-- End of row-->
+        </div>
+        <hr class="foot2-hr"/>
+        <div class="container">
+        	<div class="row">
+            	<div class="col-sm-6">
+                	<div class="foot3-content hide-small">Copyright by IMPACT Exhibition Management Co.,Ltd.</div>
+                </div>
+                <div class="col-sm-6">
+                	<div class="foot3-oneline"><a href="http://www.impact.co.th/"><img src="img/impact-icon.png" /></a></div>
+                    <div class="foot3-oneline"><img src="img/footerline.png" /></div>
+                    <div class="foot3-oneline" style="margin-top:1.2%"><a href="https://www.facebook.com/TsubohachiTh"><img src="img/facebook-icon.png" /></a></div>
+                    <div class="foot3-oneline" style="margin-top:1.2%"><a href="https://www.instagram.com/tsubohachi_thailand"><img src="img/insta-icon.png" /></a></div>
+                    <div class="foot3-oneline" style="margin-top:1.2%"><a href="tel:+66989509318"><img src="img/tel-icon.png" /></a></div>
+                </div>
+            </div><!-- End of row-->
+        </div><!--End of Container-->
+    </section><!-- footer -->
+</div><!-- bg04 -->
+    
+    
+<!-- From Reserve-->
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<form action="" id="menu-reserve">
+
+<legend>Restaurent</legend>
+	<label for="restaurent">Restaurent: </label>
+    <div>
+    <select name="restaurent" id="restaurent" onchange="dynamic(this)">
+    	<option value="def" selected="selected">--Choose Restaurent--</option>
+    	<option value="Tsubohachi">Tsubohachi</option>
+    	<option value="Ito-Kacho">Ito-Kacho</option>
+    	<option value="Taisho-tei">Taisho-tei</option>
+	</select>
+    </div>
+	<label for="branch">Branch: </label>
+	<div>
+    <select name="branch" id="branch">
+    	<option value="" selected="selected">--Choose Branch--</option>
+    </select>
+    </div>
+
+<legend>Personal detail</legend>
+	<label for="Name">Name: </label><div><input id="firstName" type="text" name="Name" required/></div>
+    <label for="telephone">Telephone: </label><div><input id="telephone" type="tel" name="telephone" required/></div>
+    <label for="email">Email: </label><div><input id="email" type="email" name="email" required/></div>
+
+<legend>Reservation detail</legend>
+	<label for="seat">Seat: </label><div><input type="number" name="seat" min="1" max="80" required></div>
+    <label for="date">Date/Time: </label>
+    <div><input type="text" id="datepicker" placeholder="dd/mm/yy" required style="width:80px; float:left; margin-right:5px"><input id="timepicker11" type="text" name="timepicker11" placeholder="00:00" required style="width:80px">
+    </div>
+
+<legend>Buffet</legend>
+	<div>
+        <input type="radio" id="yes" name="buffet" value="meal1"/><label for="yes">Yes</label>
+        <input type="radio" id="no" name="buffet" value="meal2" checked="checked"/><label for="no">No</label>
+    </div>
+
+<div style="display:block; height:100px; margin-top:10px" align="right">
+	<input type="submit" value="Submit">
+</div>
+
+</form>
+</div>
+
+
+            <!-- JavaScript================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <!--    <script src="js/jquery.min.js"></script>-->
+                <script src="js/timepicki.js"></script>
+                <script>
+                $('#timepicker1').timepicki({increase_direction:'up'});
+                $('#timepicker2').timepicki({min_hour_value:4});
+                $('#timepicker3').timepicki({max_hour_value:8}); 
+                $('#timepicker4').timepicki({custom_classes:"myclass"});
+                $('#timepicker5').timepicki({show_meridian:false});
+                $('#timepicker6').timepicki({
+                    step_size_hours:2,
+                    step_size_minutes:15});
+                $('#timepicker7').timepicki({
+                    overflow_minutes:true,
+                    step_size_minutes:15});
+                $('#timepicker8').timepicki({start_time: ["06", "00", "AM"]});
+                $('#timepicker9').timepicki({disable_keyboard_mobile: true});
+                $('#timepicker10').timepicki({reset:true});
+                $('#timepicker11').timepicki({
+                    show_meridian:false,
+                    min_hour_value:0,
+                    max_hour_value:23,
+                    step_size_minutes:15,
+                    overflow_minutes:true,
+                    increase_direction:'up',
+                    disable_keyboard_mobile: true});
+                    
+                    
+                    
+                </script>
+                
+            </div><!-- End of Overlay-content-->
+        </div><!-- End of Overlay-->
+        
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <div class="btn-reserve">
+		<span onclick="openNav()"><a href="#reservation"><img src="img/btn_reserve.png" class="img-fluid" ></a></span>
+        </div>
+        <!-- End of reserve-->
+        
+	
+    <script src="js/bootstrap.min.js"></script>
+
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+   <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 4,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+</div>    
+</body>
+</html>
